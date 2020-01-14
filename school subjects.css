@@ -1,0 +1,112 @@
+
+h1 {
+color: rgb(250,00,155);
+}
+
+body {
+background: rgba(212,59,83,.3);
+}
+
+li {
+border: 2px solid rgba(55,68,165,.4);
+}
+
+#Maths {
+	background: rgba(00,00,255,.3);
+} 
+
+#Eng {
+	background: rgba(00,00,255,.3);
+} 
+
+.events {
+	background: rgba(50,220,55,.3);
+} 
+
+/* Star selector: Applies to every single element*/
+   /*  
+   * {
+ border: 1px solid lightgrey;
+}
+*/
+
+/*
+.events {
+	text-decoration: green wavy underline;
+} 
+*/
+
+/* descendent selector: This selector takes 2 or more tag names or selectors’ E.g if you wanna select everything in an a tag or li tag or .hello tag or #hello tag etc.
+*/
+  /*  
+   li h1 {
+   color: blue;
+}
+*/
+
+
+/*Adjacent selector
+Will help us select elements that comes after another element, not next to the inside (e.g. not selecting li in a ul), but selecting siblings. For instance, you can select all ul that comes after h4 (that is, all elements in h4 group, without considering elements in other h1, h2 etc. but h4). In that case, it won’t consider ul that comes before h4. 
+E.g.
+h4 + ul  (Note that without the +, it will give result of all ul inside the h4, which is not what you want. 
+*/
+
+ /* 
+h4 + ul {
+border: 4px solid red;
+}
+*/
+
+/* Attribute selector
+a [href]
+This is a way to select any element, based on any attribute. You can use it to select links and all images of a particular source or input of a particular type, like passwords or checkbox.
+*/
+
+
+/* If you wanna style your link differently */
+/* a[href="http://www.facebook.com"] {
+	color: red;
+} */
+
+/* If you wanna style all text inputs differently */
+/* input [type="text"] {
+	color: red;
+} */
+	/* If you wanna style all checkboxes differently */
+	/* input [type="checkbox"] {
+	color: red;
+}  */
+
+	/* If you wanna style submit button differently */
+	/* input [type="submit"] {
+	color: green;
+}  */
+
+
+/* Note: it is important to select input by type, to specify the kind of input you mean, since all inputs e.g. password, email, color, submit etc. are all in input tag.
+*/
+
+/*
+ Nth  of type
+This takes a number, e.g. 3 or 5, and then select every nth of a specific element. For instance, if I wanna select every 5th div or every 2nd li or 10th paragraph of a page, I could use nth of type. Example:
+*/
+
+/*
+li:nth-of-type(2){
+	background: purple;
+}  
+*/
+
+/* It should be noted that in this case, even when you have many lists within each group list, only the 2nd will be selected per group list
+You can also make it select every even or odd number, then in this case, it will also select even numbers on the same group list.
+*/
+
+/* li:nth-of-type(odd){
+background: red;
+} */
+
+/* 
+li:nth-of-type(even){
+background: red;
+}
+*/
